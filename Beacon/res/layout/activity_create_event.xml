@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+
+    
+ 
+ 	<LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="10"
+    	android:orientation="horizontal"
+    	android:visibility="visible"
+        android:weightSum="9">
+    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:text="Event Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+	   
+	    <EditText
+       		android:id="@+id/editText"
+        	android:layout_width="0dp"
+            android:gravity="center_vertical"
+        	android:layout_height="fill_parent" 
+            android:layout_weight="6"
+            />
+	
+	</LinearLayout>
+	
+ 	<LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="10"
+    	android:orientation="horizontal"
+    	android:visibility="visible"
+        android:weightSum="9">
+    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Host's Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+	   
+	    <EditText
+       		android:id="@+id/editText"
+        	android:layout_width="0dp"
+        	android:layout_height="fill_parent" 
+            android:gravity="center_vertical"
+            android:layout_weight="6"
+            />
+	
+	</LinearLayout>
+	
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="0dp"
+    	android:layout_weight="10"
+        android:padding="10dp"
+        android:text="Volume Control"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+ 
+    <SeekBar
+        android:id="@+id/startTime_bar"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="0"
+        android:max="60"
+        android:secondaryProgress="0" />
+ 
+    <TextView
+    	android:id="@+id/startTime_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:text="Now!"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+            
+</LinearLayout>
